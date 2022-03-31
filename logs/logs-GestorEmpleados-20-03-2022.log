@@ -1,0 +1,13 @@
+[ERROR] - Gestor:46 20-03-2022 23:28:46 - java.util.InputMismatchException: Value out of range. Value:"99999" Radix:10
+[ERROR] - Gestor:46 20-03-2022 23:31:37 - java.util.InputMismatchException: Value out of range. Value:"999" Radix:10
+[ERROR] - Gestor:46 20-03-2022 23:31:41 - java.util.InputMismatchException
+[ INFO] - Gestor:25 20-03-2022 23:33:15 - Seleccionado OP1
+[ INFO] - Gestor:29 20-03-2022 23:33:20 - Seleccionado OP1
+[ INFO] - Gestor:37 20-03-2022 23:38:19 - Seleccionado OP1
+[ INFO] - Gestor:28 20-03-2022 23:38:34 - Seleccionado OP1
+[ERROR] - Gestor:50 20-03-2022 23:38:42 - java.util.InputMismatchException: Value out of range. Value:"9999" Radix:10
+[ INFO] - Gestor:40 20-03-2022 23:38:50 - Seleccionado OP4
+[ INFO] - Gestor:26 20-03-2022 23:41:37 - Seleccionado OP1
+[ INFO] - Gestor:31 20-03-2022 23:42:11 - Seleccionado OP2
+[ERROR] - Gestor:49 20-03-2022 23:42:22 - java.util.InputMismatchException
+[ INFO] - Gestor:39 20-03-2022 23:42:25 - Seleccionado OP4

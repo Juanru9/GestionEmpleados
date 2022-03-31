@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <Properties>
+        <!-- Usando ..\ se accede a una ruta relativa anterior a donde este el config.-->
+        <Property name="log-path">./logs</Property>
+    </Properties>
+ 
+    <Appenders>
+        <RollingFile name="file-log" fileName="${log-path}/logs-GestorEmpleados.log" filePattern="${log-path}/logs-GestorEmpleados-%d{dd-MM-yyyy}.log">
+            <PatternLayout pattern="[%5p] - %c{1}:%L %d{dd-MM-yyyy HH:mm:ss} - %m%n"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1"  modulate="true" />
+            </Policies>
+        </RollingFile>
+ 
+        <Console name="console" target="SYSTEM_OUT">
+            <PatternLayout pattern="[%5p] - %c{1}:%L %d{dd-MM-yyyy HH:mm:ss} - %m%n" />
+        </Console>
+    </Appenders>
+    <Loggers>
+        <!-- Restriccion del logger para com.gestionempleados.control -->
+        <Logger name="com.gestionempleados.control" level="info" additivity="false">
+			<appender-ref ref="console" level="debug" />
+            <appender-ref ref="file-log" level="warning" />
+        </Logger>
+		
+        <!-- Restriccion del logger para com.gestionempleados.datos -->
+        <Logger name="com.gestionempleados.data" level="info" additivity="false">
+			<appender-ref ref="console" level="debug" />
+            <appender-ref ref="file-log" level="warning" />
+        </Logger>
+		
+        <!-- Restriccion del logger para com.gestionempleados.excepciones -->
+        <Logger name="com.gestionempleados.excepciones" level="info" additivity="false">
+			<appender-ref ref="console" level="debug" />
+            <appender-ref ref="file-log" level="warning" />
+        </Logger>
+		
+        <!-- Restriccion del logger para com.gestionempleados.gui -->
+        <Logger name="com.gestionempleados.gui" level="info" additivity="false">
+			<appender-ref ref="console" level="debug" />
+            <appender-ref ref="file-log" level="warning" />
+        </Logger>
+		
+        <!-- Restriccion del logger para com.gestionempleados.modelos -->
+        <Logger name="com.gestionempleados.model" level="info" additivity="false">
+			<appender-ref ref="console" level="debug" />
+            <appender-ref ref="file-log" level="warning" />
+        </Logger>
+		
+        <!-- Restriccion del logger para com.gestionempleados.servicios -->
+        <Logger name="com.gestionempleados.service" level="info" additivity="false">
+			<appender-ref ref="console" level="debug" />
+            <appender-ref ref="file-log" level="warning" />
+        </Logger>
+		
+        <!-- Restriccion del logger para com.gestionempleados.utilidades -->
+        <Logger name="com.gestionempleados.util" level="info" additivity="false">
+			<appender-ref ref="console" level="debug" />
+            <appender-ref ref="file-log" level="warning" />
+        </Logger>
+		
+    </Loggers>
+</Configuration>
